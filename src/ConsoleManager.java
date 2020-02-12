@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 public class ConsoleManager {
 
-    public Thread consoleListener;
+    private Thread consoleListener;
+
+    public Thread getConsoleListener() {
+        return consoleListener;
+    }
 
     void listen(Shell controller) {
 
@@ -79,7 +83,6 @@ public class ConsoleManager {
             }
         });
         consoleListener.start();
-
     }
 
 }

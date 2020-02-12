@@ -1,15 +1,20 @@
 import processing.core.PApplet;
 
-public class GUI extends PApplet {
+public class GUI extends PApplet{
+
+    GUI() {
+        this.start();
+    }
 
     @Override
     public void setup() {
-        size(width / 5, height);
+        size(displayWidth / 5, displayHeight);
+        frameRate = 30;
     }
 
     @Override
     public void draw() {
-        line(0, 0, pixelWidth, pixelHeight);
+        line(0, 0, width, height);
     }
 
 

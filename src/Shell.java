@@ -1,9 +1,10 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-class Shell implements MastermindGame {
+class Shell extends JApplet implements MastermindGame {
 
     private static ConsoleManager manager;
 
@@ -28,7 +29,7 @@ class Shell implements MastermindGame {
     }
 
     void quit() {
-        manager.consoleListener.interrupt();
+        manager.getConsoleListener().interrupt();
     }
 
     @Override
