@@ -12,6 +12,7 @@ class Shell extends JApplet implements MastermindGame {
         Shell controller = new Shell();
 
         GUI gui = new GUI();
+        
 
         manager = new ConsoleManager();
         manager.listen(controller);
