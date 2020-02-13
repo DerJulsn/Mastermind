@@ -1,18 +1,20 @@
-import javax.swing.*;
+import processing.core.PApplet;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-class Shell extends JApplet implements MastermindGame {
+class Shell implements MastermindGame {
 
     private static ConsoleManager manager;
 
     public static void main(String[] args) {
+
         Shell controller = new Shell();
 
-        GUI gui = new GUI();
-        
+        new GUI().setShell(controller);
+        PApplet.main("GUI");
 
         manager = new ConsoleManager();
         manager.listen(controller);
