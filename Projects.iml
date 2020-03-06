@@ -10,11 +10,12 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://H:/core.jar!/" />
+          <root url="jar://L:/10C_ReJ/core.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jdk1.8" level="project" />
   </component>
 </module>

@@ -13,8 +13,8 @@ class Shell implements MastermindGame {
 
         Shell controller = new Shell();
 
-        new GUI().setShell(controller);
         PApplet.main("GUI");
+        GUI.setShell(controller);
 
         manager = new ConsoleManager();
         manager.listen(controller);
