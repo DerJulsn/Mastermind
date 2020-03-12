@@ -168,7 +168,7 @@ class Shell implements MastermindGame {
 
     }
 
-    private byte getBlackPins(ColorCode a) {
+    public byte getBlackPins(ColorCode a) {
         return getBlackPins(a, getSecret());
     }
 
@@ -193,7 +193,7 @@ class Shell implements MastermindGame {
 
     }
 
-    private byte getWhitePins(ColorCode a) {
+    public byte getWhitePins(ColorCode a) {
         return getWhitePins(a, getSecret());
     }
 
